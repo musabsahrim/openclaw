@@ -24,6 +24,7 @@ COPY scripts ./scripts
 RUN pnpm install --frozen-lockfile
 
 COPY . .
+COPY railway-config.json /app/railway-config.json
 RUN pnpm build
 # Force pnpm for UI build (Bun may fail on ARM/Synology architectures)
 ENV OPENCLAW_PREFER_PNPM=1
@@ -41,4 +42,5 @@ USER node
 
 # Start gateway server for Railway
 # Binds to lan (0.0.0.0) so Railway's healthcheck can reach it
-CMD ["node", "openclaw.mjs", "gateway", "--allow-unconfigured", "--bind", "lan", "--port", "8080"]
+# Uses railway-config.json for Control UI auth settings
+CMD ["node", "openclaw.mjs", "gateway", "--allow-unconfigured", "--bind", "lan", "--port", "8080", "--config", "/app/railway-config.json"]

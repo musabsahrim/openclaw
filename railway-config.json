@@ -1,0 +1,11 @@
+{
+  "gateway": {
+    "auth": {
+      "mode": "token"
+    },
+    "controlUi": {
+      "allowInsecureAuth": true
+    },
+    "trustedProxies": ["*"]
+  }
+}

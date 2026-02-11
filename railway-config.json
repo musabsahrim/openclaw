@@ -1,7 +1,11 @@
 {
+  "agent": {
+    "model": "google/gemini-3.0-preview"
+  },
   "gateway": {
     "auth": {
-      "mode": "token"
+      "mode": "password",
+      "password": "95Is8piKGXMkkyfrs7ZSgQb59mb5dv"
     },
     "controlUi": {
       "allowInsecureAuth": true

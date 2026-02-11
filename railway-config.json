@@ -1,6 +1,10 @@
 {
-  "agent": {
-    "model": "google/gemini-3.0-preview"
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "google/gemini-3.0-preview"
+      }
+    }
   },
   "gateway": {
     "auth": {

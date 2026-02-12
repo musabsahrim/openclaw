@@ -2,24 +2,18 @@
   "agents": {
     "defaults": {
       "model": {
-        "primary": "google/gemini-2.5-flash"
+        "primary": "google/gemini-2.5-pro"
       }
     }
   },
   "gateway": {
     "auth": {
       "mode": "password",
-      "password": "openclaw"
+      "password": "95Is8piKGXMkkyfrs7ZSgQb59mb5dv"
     },
     "controlUi": {
       "allowInsecureAuth": true
     },
     "trustedProxies": ["*"]
-  },
-  "channels": {
-    "whatsapp": {
-      "dmPolicy": "allowlist",
-      "allowFrom": ["*"]
-    }
   }
 }

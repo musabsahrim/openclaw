@@ -9,7 +9,7 @@
   "gateway": {
     "auth": {
       "mode": "password",
-      "password": "95Is8piKGXMkkyfrs7ZSgQb59mb5dv"
+      "password": "openclaw"
     },
     "controlUi": {
       "allowInsecureAuth": true

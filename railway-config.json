@@ -15,5 +15,11 @@
       "allowInsecureAuth": true
     },
     "trustedProxies": ["*"]
+  },
+  "channels": {
+    "whatsapp": {
+      "dmPolicy": "allowlist",
+      "allowFrom": ["*"]
+    }
   }
 }
